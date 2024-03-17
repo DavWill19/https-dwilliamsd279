@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- boostrap stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--  bootstrap navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img class="mx-2 logo" src="./images/picture1.png"
+                    alt="Paradigm Pet Professionals logo" width="50" height="50"></a>
+            <a class="navbar-brand" href="index.html">Paradigm Pet Professionals </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cats.html">Cats</a>
+                        <!-- Secondary nav for Cats -->
+                        <ul class="secondary-nav">
+                            <a href="catCare.html">Cat Care</a>
+                            <!-- Add more secondary links here -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dogs.html">Dogs</a>
+                        <!-- Secondary nav for Dogs -->
+                        <ul class="secondary-nav">
+                            <a href="dogCare.html">Dog Care</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fish.html">Fish</a>
+                        <!-- Secondary nav for Fish -->
+                        <ul class="secondary-nav">
+                            <a href="fresh.html">Freshwater</a>
+                            <a href="salt.html">Saltwater</a>
+                            <!-- Add more secondary links here -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="birds.html">Birds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQ</a>
+                        <!-- Secondary nav for FAQ -->
+                        <ul class="secondary-nav">
+                            <a href="adoption.html">Adoption</a>
+                            <!-- Add more secondary links here -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search bar -->
+                <div class="ms-auto">
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-search animate__animated animate__fadeIn" type="submit">Search</button>
+
+                    </form>
+                </form>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+    <main id="faq" class="container mt-4 #harrisburg">
+        <div class="container">
+            <h1>FAQ</h1>
+            <hr>
+            <h1 class="text-center">
+                Pexperts Frequently Asked Questions</h2>
+                <div class="relative">
+                    <section class="text-center animate__animated animate__fadeIn  py-3 mt-3">
+                        <div class="row">
+                            <div class="col-sm-6 offset-3">
+                                <img src="./images/hamster.jpg"
+                                    class="img-fluid border2 animate__animated animate__fadeIn mb-5" alt="Hamster">
+                            </div>
+                        </div>
+                        <h3>Our “Pexperts” typically encounter the following questions when consulting with prospective
+                            “pet
+                            parents:”</h3>
+                        <hr class="half">
+                        <div class="faq-container">
+                            <div class="faq-item" onclick="toggleFAQ('faq1')">
+                                <h3 class="faq-question">What is the best way to rid my dog or cat of fleas?</h3>
+                                <p class="faq-answer" id="faq1">Sometimes our furry friends pick up hitchhikers that
+                                    make
+                                    them very itchy and uncomfortable. If gone unchecked, fleas can infest your home,
+                                    making
+                                    it even more difficult to rid them from your loved one’s coat. To eliminate fleas,
+                                    choose a shampoo specially formulated to kill fleas and be sure to read and follow
+                                    all
+                                    instructions on the label. Repeat treatment as necessary until your pet is free of
+                                    fleas; if you see skin irritation, stop use immediately and contact your local vet.
+                                </p>
+                            </div>
+
+                            <div class="faq-item" onclick="toggleFAQ('faq2')">
+                                <h3 class="faq-question">How long can I expect my pet bird to live?</h3>
+                                <p class="faq-answer" id="faq2">The answer can vary widely depending on the type of
+                                    bird,
+                                    the size, the environment, and of course, mother nature. Assuming all is well in the
+                                    external factors that are out of the owner's control, cockatiels and budgies live up
+                                    to
+                                    20 years old on average. However, many parrot variations are known to live nearly an
+                                    astounding 100 years! As with many living organisms, longevity can be increased by
+                                    keeping annual veterinarian visits, maintaining a healthy diet, and keeping your
+                                    feathery friend's environment sanitary.</p>
+                            </div>
+
+                            <div class="faq-item" onclick="toggleFAQ('faq3')">
+                                <h3 class="faq-question">How often should I feed my pet snake?</h3>
+                                <p class="faq-answer" id="faq3">Most snakes eat one to two times per week, depending on
+                                    their age, size, and activity level. Female snakes often increase their food intake
+                                    as
+                                    breeding season gets underway. Some snakes can go as long as two weeks before
+                                    needing
+                                    their next meal; this is normal. However, if your snake has not eaten in two or
+                                    three
+                                    weeks and seems lethargic, reach out to your local vet to determine if your snake
+                                    might
+                                    be ill or injured.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- adoption section with link to new page -->
+                    <section class="text-center container2 animate__animated animate__fadeIn mt-3 faq-container ">
+                        <h2 class="faq-question"><img src="./images/paws003B6D.png" class="img-fluid paws"
+                                alt="Paradigm Pet Professionals">Adoption Questions</h3>
+                            <hr class="half">
+                            <div class="row mb-3">
+                                <div class="col-sm-6 offset-3 mb-3">
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./images/Picture3.jpg" class="d-block w-100 border"
+                                                    alt="Adopt a pet">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/Picture9.jpg" class="d-block w-100 border"
+                                                    alt="Adopt a pet">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/Picture6.jpg" class="d-block w-100 border"
+                                                    alt="Adopt a pet">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./images/Picture17.jpg" class="d-block w-100 border"
+                                                    alt="Adopt a pet">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <h5>Check out our <a class="highlight" href="adoption.html">adoption page</a> to find
+                                    information on pets available for adoption.</p>
+                                    <hr class="half">
+                                    <a href="adoption.html" target="_blank"
+                                        class="btn btn-primary btn-lg animate__animated animate__fadeInRight">Learn More
+                                        About Adoption
+                                    </a>
+                    </section>
+                </div>
+                <hr class="half mt-5">
+                <p class="text-center mt-3">If you have a question that is not listed here, please feel free to <a
+                        href="contact.html">contact us</a> and we will be happy to help you.</p>
+        </div>
+        <footer class="text-center">
+            <hr>
+            <p>&copy; 2024 Paradigm Pet Professionals </p>
+            <p>1234 Main Street, Pittsburgh, PA 15222</p>
+            <!-- Feel Free to check out my portfolio site -->
+            <p>Powered by <a href="https://devwilliams.netlify.app" target="_blank">DevWIlliams</a></p>
+    </main>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- boostrap stuff -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- import my js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
